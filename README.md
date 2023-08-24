@@ -1,7 +1,10 @@
 # Email App with Java
-#### In this project, we want to implement a simple messaging program similar to Gmail through multi-threaded programming and network programming.
 
+<div align="center"><img src="https://github.com/amirkasaei/Email-App-Java-OOP/blob/main/img/app.png?raw=true"width="60%"/></div> </br >
+
+#### In this project, we want to implement a simple messaging program similar to Gmail through multi-threaded programming and network programming.
 ## Description
+
 ### Project has two main parts:
 ### 1. Server:
 
