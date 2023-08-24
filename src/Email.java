@@ -212,7 +212,7 @@ public class Email extends JFrame {
         };
         //subject
         JLabel subjectPreview = new JLabel();
-        subjectPreview.setBounds(50, 20, 60, 20);
+        subjectPreview.setBounds(50, 20, 200, 20);
         subjectPreview.setFont(new Font("Calibri", Font.BOLD, 18));
         //sender
         JLabel senderPreview = new JLabel();
@@ -325,7 +325,7 @@ public class Email extends JFrame {
                     for (int i = 0; i < numberOfMails; i++) {
                         temp = client.in.readUTF().split("/");
                         //creating mail object
-                        Mail m = new Mail(client.getUsername(), temp[0], temp[1], temp[2], temp[3]);
+                        Mail m = new Mail(temp[0], client.getUsername(), temp[1], temp[2], temp[3]);
                         //panel for each mail and its data
                         JPanel inboxMailPanel = new JPanel(null);
                         JLabel inboxMailSubLabel = new JLabel(m.getSubject());

@@ -150,7 +150,7 @@ public class Server {
                         for (int i = usr.getInbox().size() - 1; i >= 0; i--) {
                             //send mail data
                             mail = usr.getInbox().get(i);
-                            out.writeUTF(mail.getReceivers() + "/" + mail.getSubject() + "/" + mail.getText() + "/" + mail.getDate());
+                            out.writeUTF(mail.getSender() + "/" + mail.getSubject() + "/" + mail.getText() + "/" + mail.getDate());
                         }
                     } else if (message.startsWith("sent: ")) {
                         //getting sent mails
